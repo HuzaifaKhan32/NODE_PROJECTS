@@ -1,2 +1,5 @@
 var guest_names = ["Mr. Kalam", "Mr. Abdul Rauf", "Mr. Iqbal", "Mr. Mohsin"];
-console.log("".concat(guest_names[2], " Plz have a dinner with us on saturday night"));
+var invitation = "Please, Have a dinner with me!";
+for (var i = 0; i < guest_names.length; i++) {
+    console.log(guest_names[i] + ", " + invitation);
+}
