@@ -1,7 +1,7 @@
-var friend_name = ["Ebtisam", "Ghilman", "Abdul Wasey", "Hashir"];
-var meassage = "Hi! [NAME] hope you're doing OK";
-for (var _i = 0, friend_name_1 = friend_name; _i < friend_name_1.length; _i++) {
-    var name_1 = friend_name_1[_i];
-    var personmeassage = meassage.replace("[NAME]", name_1);
+"use strict";
+let friend_name = ["Ebtisam", "Ghilman", "Abdul Wasey", "Hashir"];
+let meassage = "Hi! [NAME] hope you're doing OK";
+for (let friend of friend_name) {
+    let personmeassage = meassage.replace("[NAME]", friend);
     console.log(personmeassage);
 }

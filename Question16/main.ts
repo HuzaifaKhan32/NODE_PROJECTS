@@ -11,3 +11,4 @@ let Invitation : string = "Please, Have a dinner with me!";
 for(let i = 0; i < GuestNames.length; i++ ){
     console.log(GuestNames[i] + ", " + Invitation);
 }
+console.log(GuestNames);
