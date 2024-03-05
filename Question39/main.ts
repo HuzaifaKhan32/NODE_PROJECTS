@@ -4,3 +4,5 @@ function country_city(city : string, country : string){
     console.log(`${city}, ${country}`);
 }
 country_city("Lahore", "Pakistan");
+country_city("Berlin", "Germany");
+country_city("Makkah", "Saudi Arabia");
