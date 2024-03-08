@@ -4,11 +4,11 @@ type car = {
     model : string
     [key : string] : any;
 }
-function carInformation(manufacture : string, model : string, ...optional : [Record<string, any>]) : car{
+function carInformation(manufacture : string, model : string, ...optional : Record<string, any>[]) : car{
     return{
         manufacture,
         model,
-        ...optional
+        ...optional[0]
     }
 } 
 let mycar : car = carInformation("Toyota", "Corolla", {colour : "Black", Year : "2020" });

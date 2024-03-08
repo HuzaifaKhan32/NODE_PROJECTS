@@ -9,8 +9,12 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
-function carInformation(manufacture, model, optional) {
-    return __assign({ manufacture: manufacture, model: model }, optional);
+function carInformation(manufacture, model) {
+    var optional = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        optional[_i - 2] = arguments[_i];
+    }
+    return __assign({ manufacture: manufacture, model: model }, optional[0]);
 }
 var mycar = carInformation("Toyota", "Corolla", { colour: "Black", Year: "2020" });
 console.log(mycar);
